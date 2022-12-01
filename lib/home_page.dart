@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'menu_page.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-  void onClick() {}
+class Home extends StatelessWidget {
+  const Home({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +15,11 @@ class HomePage extends StatelessWidget {
             style: TextStyle(fontSize: 80.0),
           ),
           OutlinedButton(
-            onPressed: onClick,
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const Menu();
+              }));
+            },
             child: const Text(
               "Start",
               style: TextStyle(fontSize: 64.0),

@@ -1,4 +1,4 @@
-# word_assist
+# Word Assist
 
 A new Flutter project.
 
